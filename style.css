@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 153);
+    display: flex;
+}
+#lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#lnavright{
+    display: flex;
+    align-items: center;
+}
+#lnavright a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 14px;
+}
+#lnavright i{
+    color: royalblue;
+}
+#left{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    
+}
+/* Center banunu parne cha tyo textcenter lai */
+#left  #textcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top:50%;
+    left: 50%;
+}
+#textcenter h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+#textcenter p {
+    font-size: 18px;
+}
+#textcenter a {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color: blanchedalmond;
+    display: flex;
+
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1552010099-5dc86fcfaa38?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1576181177940-cb8592693079?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%);
+    background-position: top;
+    background-size: cover;
+}
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1552089123-2d26226fc2b7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width:100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
